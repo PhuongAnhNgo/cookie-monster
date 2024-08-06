@@ -1,20 +1,81 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
+
+const colors = require('tailwindcss/colors');
 
 const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './content/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  //darkMode: "class",
   theme: {
+    fontFamily: {},
+    colors: {
+      zinc: colors.zinc,
+      purple: {
+        800: '#3F2070',
+        700: '#5D22AA',
+        600: '#6B24BF',
+        500: '#7158EF',
+        400: '#8358F4',
+        300: '#955BEC',
+        200: '#B081FD',
+      },
+      blue: {
+        DEFAULT: '#6992ED',
+      },
+      pink: {
+        DEFAULT: '#FB7E8F',
+        500: '#FC6A84',
+      },
+      yellow: {
+        DEFAULT: '#F2F1D3',
+      },
+      green: {
+        DEFAULT: '#63cf96',
+        400: '#A6D25F',
+        600: '#4EAF7C',
+      },
+      red: {
+        200: '#F5CDC5',
+        400: '#BD0000',
+      },
+      white: colors.white,
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        textColor: '#3f3f46',
+      },
+      fontSize: {
+        //[fontSize, lineHeight]
+        h5: ['0.7rem', '1.3rem'],
+        h4: ['0.8rem', '1.5rem'],
+        h3: ['1rem', '1.75rem'],
+        h2: ['1.5rem', '1.75rem'],
+        h1: ['2.5rem', '2rem'],
+      },
+      borderWidth: {
+        '1': '1px',
+      },
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '120ch', // add required value here
+          },
+        },
       },
     },
   },
-  plugins: [],
+  plugins: [
+    //require("@tailwindcss/typography"),
+    // ...
+  ],
 };
 export default config;
