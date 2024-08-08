@@ -17,7 +17,7 @@ const Heading = ({
 
   const levelClass = {
     1: 'md:text-h1 text-h2 font-bold text-center',
-    2: 'text-h2 font-bold ',
+    2: 'text-h3 md:text-h2 font-bold ',
     3: 'text-h3 font-semibold',
   };
 

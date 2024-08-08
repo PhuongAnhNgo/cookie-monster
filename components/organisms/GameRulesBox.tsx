@@ -4,20 +4,24 @@ import Button from '@/components/atoms/Button';
 import Heading from '@/components/atoms/Typography/Heading';
 import RuleSet from '@/components/molecules/RuleSet';
 import Form from '@/components/atoms/Form';
+import { useRouter } from 'next/navigation';
 
 const GameRulesBox = () => {
   //Disable button in the first 3 second so that users read the rules first
   const [buttonDisabled, setButtonDisable] = useState(true);
-
+  const router = useRouter();
+  const handleClick = () => {
+    router.push('/level');
+  };
   useEffect(() => {
     const timer = setTimeout(() => {
       setButtonDisable(false);
-    }, 2000);
+    }, 1500);
   });
 
   return (
     <Form className='w-4/5 p-8 text-center sm:w-3/5 md:p-10 md:text-left'>
-      <Heading level='2' className='mb-2'>
+      <Heading level='2' className='mb-2 text-center'>
         HOW TO PLAY
       </Heading>
       <RuleSet
@@ -36,8 +40,9 @@ const GameRulesBox = () => {
         <Button
           className={buttonDisabled ? 'cursor-not-allowed opacity-50' : ''}
           disabled={buttonDisabled}
+          onClick={handleClick}
         >
-          Start
+          START
         </Button>
       </div>
     </Form>

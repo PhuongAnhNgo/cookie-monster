@@ -1,10 +1,21 @@
+'use client';
 import Button from '@/components/atoms/Button';
 import Heading from '@/components/atoms/Heading';
 import Icon from '@/components/atoms/Icon';
 import CookieIcon from '@/components/atoms/CookieIcon';
 import HomePageWrapper from '@/components/atoms/Wrapper/HomePageWrapper';
+import { useRouter } from 'next/navigation';
+import { useLevelContext } from '@/Context/LevelContext';
 
 const HomeTemplate = () => {
+  const { setLives, setCurrLevel, setResult } = useLevelContext(); //reset all values of the context
+  setLives(3);
+  setCurrLevel(1);
+  setResult('neutral');
+  const router = useRouter();
+  const handleClick = () => {
+    router.push('/rules');
+  };
   return (
     <HomePageWrapper>
       <CookieIcon className='mt-16 flex scale-50 justify-center md:mt-28 md:scale-100' />
@@ -15,7 +26,10 @@ const HomeTemplate = () => {
       </p>
 
       <div className='flex justify-center'>
-        <Button className='button-bounce absolute bottom-16 mt-12 text-2xl'>
+        <Button
+          className='button-bounce absolute bottom-16 mt-12 text-2xl md:py-4'
+          onClick={handleClick}
+        >
           START
           <Icon icon='arrow' className='mx-2'></Icon>
         </Button>

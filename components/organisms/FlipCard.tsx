@@ -35,14 +35,15 @@ const FlipCard = ({ children, className }: FlipCardProps) => {
     setResult('neutral');
     setShowAnswer(false);
     if (lives < 1) {
-      router.push('/endgame');
+      router.push('/loosegame');
     }
-    if (currLevel == 3) {
-      router.push('/endgame');
+    if (currLevel == 7) {
+      router.push('/wingame');
     }
+
     let timer = setTimeout(() => {
       setCurrLevel(currLevel + 1);
-    }, 180);
+    }, 100);
     return () => clearTimeout(timer);
   };
 
@@ -59,7 +60,7 @@ const FlipCard = ({ children, className }: FlipCardProps) => {
       </div>
       <div
         id='back-face'
-        className='rotate back-face-hidden absolute top-0 h-full w-full text-center'
+        className='flipped back-face-hidden absolute top-0 h-full w-full text-center'
       >
         {result === 'correct' ? (
           <CorrectAnswer level={currLevel} nextLevel={nextLevel} />

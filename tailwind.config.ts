@@ -26,10 +26,12 @@ const config: Config = {
       },
       blue: {
         DEFAULT: '#6992ED',
+        300: '#2EAEF6',
       },
       pink: {
         DEFAULT: '#FB7E8F',
         500: '#FC6A84',
+        600: '#FF717D',
       },
       yellow: {
         DEFAULT: '#F2F1D3',

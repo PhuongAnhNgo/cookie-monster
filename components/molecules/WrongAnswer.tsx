@@ -37,9 +37,10 @@ const WrongAnswer = ({
         <p className='text-lg font-bold text-red-400 md:text-2xl'>
           {content[level - 1].name}
         </p>
-        <p className='pb-2 text-base md:text-2xl'>
-          {content[level - 1].definition}
-        </p>
+        <p
+          className='pb-2 text-base md:text-2xl'
+          dangerouslySetInnerHTML={{ __html: content[level - 1].definition }}
+        ></p>
         <div className='flex justify-between pb-4 md:px-12'>
           <Button
             variant='negativeRed'

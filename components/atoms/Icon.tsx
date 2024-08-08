@@ -9,6 +9,7 @@ import {
   faHeart,
   faTrophy,
   faArrowRight,
+  faX,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -31,6 +32,7 @@ const Icon = ({ icon, size = 'sm', rotation, flip, className }: IconProps) => {
     arrow: faArrowRight,
     heart: faHeart,
     trophy: faTrophy,
+    decline: faX,
   };
 
   return (

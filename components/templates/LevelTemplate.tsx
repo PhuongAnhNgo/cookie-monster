@@ -34,7 +34,7 @@ const LevelTemplate = ({ children }: LevelTemplateProps) => {
     <LevelPageWrapper>
       <LevelTopBar progress={progress} levelCompleted={levelCompleted} />
 
-      <NameOfLevelRibbon levelName={levelTitle} />
+      <NameOfLevelRibbon currLevel={currLevel} levelName={levelTitle} />
 
       <div className='flex h-1/2 w-full justify-center md:h-2/5 lg:h-1/2'>
         <FlipCard>{children}</FlipCard>

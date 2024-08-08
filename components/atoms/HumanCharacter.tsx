@@ -48,7 +48,7 @@ const HumanCharacter = ({
   return (
     <div
       {...props}
-      className={twMerge(`Character2`, className ? className : '')}
+      className={twMerge(`Character`, className ? className : '')}
     >
       {chosenCharacter}
     </div>

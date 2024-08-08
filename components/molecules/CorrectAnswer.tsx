@@ -24,14 +24,15 @@ const CorrectAnswer = ({ level, nextLevel }: CorrectAnswerProps) => {
       <div className='bg-green-600 py-2 text-white/100 md:py-4'>
         <Heading>CORRECT ANSWER</Heading>
       </div>
-      <div className='flex flex-grow flex-col justify-between px-6 pt-6 md:px-12 md:pt-12'>
+      <div className='flex flex-grow flex-col justify-between px-6 pt-6 md:px-12'>
         <p className='text-base md:text-2xl'>That trick called</p>
         <p className='text-lg font-bold text-red-400 md:text-2xl'>
           {content[level - 1].name}
         </p>
-        <p className='pb-2 text-base md:text-2xl'>
-          {content[level - 1].definition}
-        </p>
+        <p
+          className='pb-2 text-base md:text-2xl'
+          dangerouslySetInnerHTML={{ __html: content[level - 1].definition }}
+        ></p>
         <div className='flex justify-center pb-4 md:pb-8'>
           <Button variant='correctGreen' shape='rounded' onClick={nextLevel}>
             Next Level

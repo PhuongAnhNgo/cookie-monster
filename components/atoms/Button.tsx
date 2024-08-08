@@ -7,7 +7,8 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     | 'positiveGreen'
     | 'negativeRed'
     | 'neutralGray'
-    | 'correctGreen';
+    | 'correctGreen'
+    | 'neutralBlue';
   children: React.ReactNode;
   shape?: 'rounded' | 'pill';
   type?: 'button' | 'submit' | 'reset';
@@ -23,12 +24,12 @@ const Button = ({
 }: ButtonProps) => {
   //variants of button
   const variantClass = {
-    default:
-      'bg-gradient-to-r from-pink-500 to-yellow px-20 py-2 lg:py-4 font-bold',
+    default: 'bg-gradient-to-r from-pink-500 to-yellow px-20 py-2 font-bold',
     positiveGreen: 'bg-green-400',
     negativeRed: 'bg-white ring-1 ring-red-400 text-red-400',
     neutralGray: 'bg-zinc-200',
     correctGreen: 'bg-green ',
+    neutralBlue: 'bg-blue-300 text-white ',
   };
   //hover states
   const hoverBtn = {
@@ -37,6 +38,7 @@ const Button = ({
     negativeRed: 'hover:bg-red-400 hover:text-white',
     neutralGray: 'hover:bg-zinc-600 hover:text-white',
     correctGreen: 'hover:bg-zinc-600 hover:text-white',
+    neutralBlue: 'hover:bg-zinc-600 hover:text-white ',
   };
 
   //shape
@@ -50,7 +52,7 @@ const Button = ({
       type={type}
       {...rest}
       className={twMerge(
-        `justify-center gap-0.5 overflow-hidden font-medium transition`,
+        `justify-center gap-0.5 overflow-hidden text-sm font-medium transition md:text-base`,
         variantClass[variant],
         hoverBtn[variant],
 
