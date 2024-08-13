@@ -10,7 +10,7 @@ const HomePageWrapper = ({ className, children }: HomePageWrapperProps) => {
   return (
     <div
       className={twMerge(
-        `relative flex h-[calc(100dvh)] w-screen flex-col items-center overflow-hidden bg-gradient-to-r from-purple-600 to-purple-800`,
+        `relative flex h-[calc(100dvh)] w-screen flex-col items-center overflow-x-hidden bg-gradient-to-r from-purple-600 to-purple-800`,
         className ? className : ''
       )}
     >

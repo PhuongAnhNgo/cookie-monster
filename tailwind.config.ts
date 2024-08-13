@@ -55,8 +55,8 @@ const config: Config = {
         //[fontSize, lineHeight]
         h5: ['0.7rem', '1.3rem'],
         h4: ['0.8rem', '1.5rem'],
-        h3: ['1rem', '1.75rem'],
-        h2: ['1.5rem', '1.75rem'],
+        h3: ['1rem', '1.3rem'],
+        h2: ['1.5rem', '1.5rem'],
         h1: ['2.5rem', '2rem'],
       },
       borderWidth: {

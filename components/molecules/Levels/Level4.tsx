@@ -10,14 +10,14 @@ const Level4 = ({}: Level4Props) => {
   const { lives, setLives, setResult } = useLevelContext();
   return (
     <>
-      <div>
+      <div className=''>
         <Image
           src={cryingCookie}
           alt='Crying Cookie'
-          className='mx-auto scale-50 md:scale-75'
+          className='mx-auto w-16 md:w-20 lg:w-24'
         />
 
-        <p className='text-base md:text-xl'>
+        <p className='pt-2 text-base md:pt-4 md:text-xl'>
           Cookie just wants to be friend with you. Will you be a good person and
           make friend with cookie? Friends share with each other anything, data
           as well!

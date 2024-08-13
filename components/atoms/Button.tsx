@@ -43,7 +43,7 @@ const Button = ({
 
   //shape
   const shapeBtn = {
-    rounded: 'rounded-lg px-5 md:px-8 py-0.5',
+    rounded: 'rounded-lg px-4 md:px-8 py-0.5',
     pill: 'rounded-full ',
   };
 

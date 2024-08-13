@@ -59,7 +59,7 @@ const FlipCard = ({ children, className }: FlipCardProps) => {
     >
       <div
         id='front-face'
-        className={`back-face-hidden absolute flex h-full w-full flex-col justify-between px-6 py-8 md:px-12 ${levelHidden ? 'hidden' : ''}`}
+        className={`back-face-hidden absolute flex h-full w-full flex-col justify-between overflow-scroll scroll-smooth px-6 py-6 md:px-12 md:py-8 ${levelHidden ? 'hidden' : ''}`}
       >
         {children}
       </div>
