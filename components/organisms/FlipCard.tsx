@@ -18,22 +18,29 @@ const FlipCard = ({ children, className }: FlipCardProps) => {
   const [flipped, setFlipped] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
   const [firstRender, setFirstRender] = useState(true);
+  const [levelHidden, setLevelHidden] = useState(false);
+  const [replay, setReplay] = useState(false);
   const router = useRouter();
+
   useEffect(() => {
     if (firstRender) {
       setFirstRender(false);
     } else {
       setFlipped(!flipped);
     }
+    if (replay == true || result == 'neutral') {
+      setLevelHidden(false);
+    } else {
+      setLevelHidden(true);
+    }
   }, [result]);
 
   const handelReplay = () => {
     setResult('neutral');
+    setReplay(true);
   };
 
   const nextLevel = () => {
-    setResult('neutral');
-    setShowAnswer(false);
     if (lives < 1) {
       router.push('/loosegame');
     }
@@ -41,10 +48,9 @@ const FlipCard = ({ children, className }: FlipCardProps) => {
       router.push('/wingame');
     }
 
-    let timer = setTimeout(() => {
-      setCurrLevel(currLevel + 1);
-    }, 100);
-    return () => clearTimeout(timer);
+    setShowAnswer(false);
+    setCurrLevel(currLevel + 1);
+    setResult('neutral');
   };
 
   return (
@@ -54,7 +60,7 @@ const FlipCard = ({ children, className }: FlipCardProps) => {
     >
       <div
         id='front-face'
-        className='back-face-hidden absolute flex h-full w-full flex-col justify-between overflow-scroll p-12'
+        className={`back-face-hidden absolute flex h-full w-full flex-col justify-between overflow-scroll px-6 md:px-12 md:py-8 ${levelHidden ? 'hidden' : ''}`}
       >
         {children}
       </div>
@@ -65,17 +71,23 @@ const FlipCard = ({ children, className }: FlipCardProps) => {
         {result === 'correct' ? (
           <CorrectAnswer level={currLevel} nextLevel={nextLevel} />
         ) : (
-          <div id='answer-wrong' className='flex h-full flex-col'>
-            <div className={showAnswer ? 'hidden' : 'h-full'}>
-              <WrongAnswer
-                level={currLevel}
-                handelReplay={handelReplay}
-                setShowAnswer={setShowAnswer}
-              />
-            </div>
-            <div className={showAnswer ? '' : 'hidden'}>
-              <Answer level={currLevel} nextLevel={nextLevel} />
-            </div>
+          <div className='h-full'>
+            {result === 'wrong' ? (
+              <div id='answer-wrong' className='flex h-full flex-col'>
+                <div className={showAnswer ? 'hidden' : 'h-full'}>
+                  <WrongAnswer
+                    level={currLevel}
+                    handelReplay={handelReplay}
+                    setShowAnswer={setShowAnswer}
+                  />
+                </div>
+                <div className={showAnswer ? 'h-full' : 'hidden'}>
+                  <Answer level={currLevel} nextLevel={nextLevel} />
+                </div>
+              </div>
+            ) : (
+              <></>
+            )}
           </div>
         )}
       </div>

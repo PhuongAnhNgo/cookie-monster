@@ -7,6 +7,7 @@ import NameOfLevelRibbon from '../molecules/NameOfLevelRibbon';
 import FlipCard from '../organisms/FlipCard';
 import LevelTopBar from '../organisms/LevelTopBar';
 import { useEffect, useState } from 'react';
+import { log } from 'console';
 
 interface LevelTemplateProps {
   children: React.ReactNode;

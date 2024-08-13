@@ -1,6 +1,5 @@
 import React from 'react';
 import { twMerge } from 'tailwind-merge';
-import BackgroundIcon from '@/components/atoms/BackgroundPatterns/BackgroundIconHome';
 import BackgroundIconDefault from '../BackgroundPatterns/BackgroundIconDefault';
 
 interface EndGamePageWrapperProps extends React.HTMLAttributes<HTMLDivElement> {

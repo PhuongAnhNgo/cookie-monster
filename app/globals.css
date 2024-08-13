@@ -143,7 +143,7 @@ button:hover {
 }
 
 .card {
-  transition: transform 0.25s;
+  transition: transform 0.2s;
   transform-style: preserve-3d;
 }
 
@@ -167,15 +167,15 @@ button:hover {
 .circle-rotate-scale {
   width: 100%;
   height: 100%;
-  animation: rotateScale 0.4s ease-in-out 1;
+  animation: rotateScale 0.5s ease-in-out 1;
 
   transform-origin: center;
 }
 .star2 {
-  animation-delay: 0.5s;
+  animation-delay: 0.6s;
 }
 .star3 {
-  animation-delay: 1s;
+  animation-delay: 1.2s;
 }
 @keyframes rotateScale {
   0% {
