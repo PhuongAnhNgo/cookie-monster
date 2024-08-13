@@ -23,7 +23,6 @@ const WrongAnswer = ({
   useEffect(() => {
     if (lives < 1) {
       setButtonDisabled(true);
-      console.log(buttonDisabled);
     }
   }, [lives]);
 

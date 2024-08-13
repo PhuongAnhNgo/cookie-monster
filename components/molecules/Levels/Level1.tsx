@@ -12,7 +12,7 @@ const Level1 = ({}: Level1Props) => {
   const { lives, setLives, setResult } = useLevelContext();
   return (
     <>
-      <div>
+      <div className='overflow-scroll'>
         <Heading level='2' className='pb-4'>
           This website uses cookies
         </Heading>

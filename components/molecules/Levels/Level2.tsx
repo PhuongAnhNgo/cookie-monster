@@ -41,7 +41,7 @@ const Level2 = ({}: Level2Props) => {
 
   return (
     <>
-      <div>
+      <div className='overflow-scroll'>
         <Heading level='2' className='pb-4'>
           Consent to cookies& data processing
         </Heading>
