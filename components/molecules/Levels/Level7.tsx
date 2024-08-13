@@ -212,7 +212,7 @@ const Level7 = ({}: Level7Props) => {
             shape='rounded'
             onClick={() => setResult('correct')}
           >
-            Yes, I'm sure
+            Yes, I am sure
           </Button>
         </div>
       </div>

@@ -29,9 +29,9 @@ const WinGameTemplate = ({ handleReplay, lives }: WinGameTemplateProps) => {
           </p>
           <p className='mx-4 text-sm md:mx-8 md:text-base'>
             Awesome! You have successfully recognized and avoided Cookie
-            Monster's tricks.
+            Monster&#39;s tricks.
             <br />
-            Have you memorized all the definitions of the cookie monster's
+            Have you memorized all the definitions of the cookie monster&#39;s
             tricks?
             <br />
             Play again to master them.

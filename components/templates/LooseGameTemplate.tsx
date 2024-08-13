@@ -21,7 +21,7 @@ const LooseGameTemplate = ({ handleReplay }: LooseGameTemplateProps) => {
           <p className='mx-4 text-white md:mx-8'>
             Oh no! Cookie Monster has successfully tricked you!
             <br />
-            Be careful with Cookie Monster's evil tricks!
+            Be careful with Cookie Monster&#39;s evil tricks!
             <br />
             Play again to master them.
           </p>

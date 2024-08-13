@@ -39,7 +39,7 @@ const Level4 = ({}: Level4Props) => {
           shape='rounded'
           onClick={() => setResult('correct')}
         >
-          I'm a bad person.
+          I am a bad person.
           <br /> I make friend with no one!
         </Button>
       </div>
