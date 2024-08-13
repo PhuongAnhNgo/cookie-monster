@@ -12,10 +12,10 @@ const Level6 = ({}: Level6Props) => {
   return (
     <>
       <div>
-        <Heading level='2' className='pb-4'>
+        <Heading level='2' className='pb-2 md:pb-4'>
           We use cookies
         </Heading>
-        <p className='text-base md:text-xl'>
+        <p className='text-sm md:text-lg'>
           Diese Website verwendet Cookies, um sicherzustellen, dass Sie das
           beste Erlebnis auf unserer Website erhalten. Funktionelle Cookies sind
           notwendig für die Funktionalität der Website. Analyse Cookies helfen
