@@ -43,14 +43,13 @@ const FlipCard = ({ children, className }: FlipCardProps) => {
   const nextLevel = () => {
     if (lives < 1) {
       router.push('/loosegame');
-    }
-    if (currLevel == 7) {
+    } else if (currLevel == 7) {
       router.push('/wingame');
+    } else {
+      setShowAnswer(false);
+      setCurrLevel(currLevel + 1);
+      setResult('neutral');
     }
-
-    setShowAnswer(false);
-    setCurrLevel(currLevel + 1);
-    setResult('neutral');
   };
 
   return (

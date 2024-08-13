@@ -17,7 +17,7 @@ const Answer = ({ level, nextLevel }: AnswerProps) => {
 
   return (
     <div className='flex h-full flex-col justify-between'>
-      <div className='flex grid grid-cols-1 justify-items-center gap-6 px-8 py-8 text-left lg:mt-12 lg:grid-cols-2 lg:px-12'>
+      <div className='flex grid h-5/6 grid-cols-1 justify-items-center gap-6 overflow-scroll px-8 py-8 text-left lg:mt-8 lg:grid-cols-2 lg:px-12'>
         <p className='md:text-lg'>{currLevelAnswer}</p>
         <Image src={img} alt='Answer' />
       </div>
