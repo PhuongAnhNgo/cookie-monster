@@ -19,7 +19,7 @@ const Level5 = ({}: Level5Props) => {
           make friend with cookie.
         </p>
       </div>
-      <div className='flex w-full justify-between pt-4'>
+      <div className='flex w-full justify-between pb-4'>
         <Button
           variant='neutralGray'
           shape='rounded'

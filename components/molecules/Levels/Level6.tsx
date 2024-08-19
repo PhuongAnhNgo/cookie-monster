@@ -23,7 +23,7 @@ const Level6 = ({}: Level6Props) => {
           verwendet, um Ihnen personalisierte Werbung zu zeigen.
         </p>
       </div>
-      <div className='flex w-full justify-between pt-6'>
+      <div className='flex w-full justify-between pb-4'>
         <Button
           variant='neutralBlue'
           shape='rounded'

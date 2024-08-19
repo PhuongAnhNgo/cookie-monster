@@ -53,6 +53,8 @@ const config: Config = {
       },
       fontSize: {
         //[fontSize, lineHeight]
+        xs: ['0.55rem', '1rem'],
+        s: ['0.8rem', '1rem'],
         h5: ['0.7rem', '1.3rem'],
         h4: ['0.8rem', '1.5rem'],
         h3: ['1rem', '1.3rem'],

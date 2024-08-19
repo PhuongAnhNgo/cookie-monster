@@ -23,7 +23,7 @@ const Level4 = ({}: Level4Props) => {
           as well!
         </p>
       </div>
-      <div className='flex w-full justify-between pt-4 md:pt-8'>
+      <div className='flex w-full justify-between pb-4 md:pt-8'>
         <Button
           variant='positiveGreen'
           shape='rounded'

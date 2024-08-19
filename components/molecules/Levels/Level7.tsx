@@ -88,7 +88,7 @@ const Level7 = ({}: Level7Props) => {
             your device to enhance our service.
           </p>
         </div>
-        <div className='flex w-full justify-between pt-6'>
+        <div className='flex w-full justify-between pb-4'>
           <Button
             variant='neutralBlue'
             shape='rounded'

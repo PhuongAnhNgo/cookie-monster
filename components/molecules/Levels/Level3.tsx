@@ -21,7 +21,7 @@ const Level3 = ({}: Level3Props) => {
           By clicking no you are not disagree to unsubcribe to our newsletter
         </p>
       </div>
-      <div className='flex w-full justify-between pt-4'>
+      <div className='flex w-full justify-between pb-4'>
         <Button
           variant='neutralBlue'
           shape='rounded'

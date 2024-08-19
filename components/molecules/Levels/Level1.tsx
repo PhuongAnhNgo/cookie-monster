@@ -22,7 +22,7 @@ const Level1 = ({}: Level1Props) => {
           precious, please agree to share data with us.
         </p>
       </div>
-      <div className='flex w-full justify-between pt-4'>
+      <div className='flex w-full justify-between pb-6'>
         <Button
           variant='positiveGreen'
           shape='rounded'
@@ -34,12 +34,14 @@ const Level1 = ({}: Level1Props) => {
           I Accept
         </Button>
 
-        <div
-          className='absolute right-6 top-4 text-zinc-400'
+        <Button
+          variant='neutralGray'
+          shape='rounded'
           onClick={() => setResult('correct')}
+          className='opacity-50'
         >
-          <Icon icon='decline' size='lg' />
-        </div>
+          Decline
+        </Button>
       </div>
     </>
   );

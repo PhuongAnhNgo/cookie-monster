@@ -16,9 +16,9 @@ const CharacterIntructions = ({
   return (
     <div
       id='human-talk'
-      className='absolute -bottom-28 h-fit scale-90 md:-bottom-12 md:scale-100'
+      className='absolute -bottom-32 h-fit scale-90 md:-bottom-12 md:scale-100'
     >
-      <SpeechBubble className='absolute top-10 ml-6 w-fit px-4 py-2'>
+      <SpeechBubble className='absolute top-14 ml-6 w-fit px-4 py-2'>
         <p className='text-reveal text-lg md:text-xl'>{instructions}</p>
       </SpeechBubble>
       <HumanCharacter className='scale-50' character={character} />
