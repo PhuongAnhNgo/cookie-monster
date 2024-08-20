@@ -6,7 +6,7 @@ export const content = [
     definition:
       'It uses <strong>visual elements (colors, size, etc.)</strong> to trick the user into choosing less restrictive privacy settings.',
     answer:
-      "The 'X' button to opt-out from cookies was hidden in the top right corner. Cookie Monster has used design tricks (colors, sizes, positions, etc.) to make you more focus on the accept option. ",
+      "The 'Decline' button to opt-out from cookies has been designed to appear as if it is disabled . Cookie Monster used deceptive button colors, sizes, positions, etc. to make you more focus on the accept option. ",
   },
   {
     title: 'Deceptive Snugness',
