@@ -18,9 +18,9 @@ const Level4 = ({}: Level4Props) => {
         />
 
         <p className='pt-2 text-base md:pt-4 md:text-xl'>
-          Cookie just wants to be friend with you. Will you be a good person and
-          make friend with Cookie? Friends share with each other anything, data
-          as well!
+          Cookie just wants to be friends with you. Will you be a good person
+          and make friends with Cookie? Friends share share everything, even
+          data!
         </p>
       </div>
       <div className='flex w-full justify-between pb-4 md:pt-8'>
