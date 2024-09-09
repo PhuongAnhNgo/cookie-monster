@@ -30,7 +30,7 @@ const GameRulesBox = () => {
       />
       <RuleSet
         imgSrc='/images/Human-ava.svg'
-        rule={`Do not accept anything!\nRead all pop-ups carefully and optout of cookies and services.`}
+        rule={`Do not accept anything!\nRead all pop-ups carefully and opt-out of cookies and services.`}
       />
       <RuleSet
         imgSrc='/images/Hearts-ava.svg'
