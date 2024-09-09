@@ -25,7 +25,7 @@ const CorrectAnswer = ({ level, nextLevel }: CorrectAnswerProps) => {
         <Heading>CORRECT ANSWER</Heading>
       </div>
       <div className='flex flex-grow flex-col justify-between px-6 pt-6 md:px-12'>
-        <p className='text-base md:text-2xl'>That trick called</p>
+        <p className='text-base md:text-2xl'>That trick is called</p>
         <p className='text-lg font-bold text-red-400 md:text-2xl'>
           {content[level - 1].name}
         </p>

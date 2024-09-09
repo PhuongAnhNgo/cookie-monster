@@ -32,7 +32,7 @@ const WrongAnswer = ({
         <Heading>WRONG ANSWER</Heading>
       </div>
       <div className='flex h-4/5 flex-col justify-between overflow-scroll px-6 pt-6 md:px-12 md:pt-6'>
-        <p className='text-base md:text-2xl'>That trick called</p>
+        <p className='text-base md:text-2xl'>That trick is called</p>
         <p className='text-lg font-bold text-red-400 md:text-2xl'>
           {content[level - 1].name}
         </p>
