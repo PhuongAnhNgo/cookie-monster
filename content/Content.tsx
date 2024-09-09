@@ -40,7 +40,7 @@ export const content = [
     definition:
       'Other <strong>distracting elements</strong> are placed alongside information related to data protection.',
     answer:
-      'Between unrelevant information, there is a line that indicates you have to share your data to visit the factory. To protect your data, do not visit the factory.',
+      'Between irrrelevant information, there is a line that indicates you have to share your data to visit the factory. To protect your data, do not visit the factory.',
     instruction: 'Read the provided information carefully!',
   },
   {
