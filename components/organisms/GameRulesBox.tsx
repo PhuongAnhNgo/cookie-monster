@@ -34,7 +34,7 @@ const GameRulesBox = () => {
       />
       <RuleSet
         imgSrc='/images/Hearts-ava.svg'
-        rule='You have 3 lives in total. Every wrong answer will cost you a life.'
+        rule='You have 3 lives in total. Every wrong answer will cost you 1 life.'
       />
       <div className='flex justify-center pt-4'>
         <Button
