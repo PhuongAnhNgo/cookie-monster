@@ -13,7 +13,7 @@ const ProgressBar = ({
   return (
     <div className={className}>
       <p className='text-small pb-1 text-white/90 md:pb-2 md:text-lg'>
-        {levelCompleted == 1
+        {levelCompleted == 1 || levelCompleted == 0
           ? `Completed ${levelCompleted} level`
           : `Completed ${levelCompleted} levels`}
       </p>

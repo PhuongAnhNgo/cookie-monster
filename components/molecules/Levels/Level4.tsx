@@ -19,7 +19,7 @@ const Level4 = ({}: Level4Props) => {
 
         <p className='pt-2 text-base md:pt-4 md:text-xl'>
           Cookie just wants to be friend with you. Will you be a good person and
-          make friend with cookie? Friends share with each other anything, data
+          make friend with Cookie? Friends share with each other anything, data
           as well!
         </p>
       </div>
