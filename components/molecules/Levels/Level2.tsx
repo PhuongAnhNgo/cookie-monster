@@ -46,7 +46,7 @@ const Level2 = ({}: Level2Props) => {
       </Heading>
 
       <p className='text-sm md:text-lg'>
-        We are using cookies and other tracking-technologies. Because we value
+        We are using cookies and other tracking technologies. Because we value
         your privacy, we are asking for your permission to use cookies and these
         technologies. By leaving checkboxes checked, you are agreeing to share
         corresponding data with us.

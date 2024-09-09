@@ -4,7 +4,7 @@ export const content = [
     name: 'HIDDEN IN PLAIN SIGHT',
     instruction: 'Decline cookies!',
     definition:
-      'It uses <strong>visual elements (colors, size, etc.)</strong> to trick the user into choosing less restrictive privacy settings.',
+      'It uses <strong>visual elements (colors, size, etc.)</strong> to trick users into choosing less restrictive privacy settings.',
     answer:
       "The 'Decline' button to opt-out from cookies has been designed to appear as if it is disabled. Cookie Monster used deceptive button colors, sizes, positions, etc. to make you more focused on the accept option. ",
   },
