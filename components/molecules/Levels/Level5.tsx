@@ -15,8 +15,8 @@ const Level5 = ({}: Level5Props) => {
           Cookie was born in 2022 in Germany. He is an only child in the family
           but he has many friends. Cookie is a very friendly person. He has a
           big cookie factory in Berlin and anyone who is his friend can come and
-          visit it. To visit the cooking factory, share your information, and
-          make friends with Cookie.
+          visit it. To visit the cooking factory, please share your information
+          and make friends with Cookie.
         </p>
       </div>
       <div className='flex w-full justify-between pb-4'>
