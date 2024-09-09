@@ -14,8 +14,7 @@ export const content = [
     instruction: 'Do not agree to anything!',
     definition:
       'It sets data-sharing options to <strong>agree by default</strong>.',
-    answer:
-      'Uncheck every data-sharing options before clicking "Save& Continue"',
+    answer: 'Uncheck all data-sharing options before clicking "Save& Continue"',
   },
   {
     title: 'Ambiguous Wording',
