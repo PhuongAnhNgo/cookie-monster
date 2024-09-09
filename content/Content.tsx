@@ -40,7 +40,7 @@ export const content = [
     definition:
       'Other <strong>distracting elements</strong> are placed alongside information related to data protection.',
     answer:
-      'Between irrrelevant information, there is a line that indicates you have to share your data to visit the factory. To protect your data, do not visit the factory.',
+      'Between irrelevant information, there is a line that indicates you have to share your data to visit the factory. To protect your data, do not visit the factory.',
     instruction: 'Read the provided information carefully!',
   },
   {
@@ -58,7 +58,7 @@ export const content = [
     definition:
       '<strong>More steps are required</strong> to enable data protection controls than steps to consent to data sharing.',
     answer:
-      'Cookie Monster made it more complicate to reject cookies. You have to first click "Reject" and then unchecked all the checkboxes and click "Save my preferences". Finally, click "Yes, I\'m sure"',
+      'Cookie Monster made it more complicated to reject cookies. You have to first click "Reject" and then uncheck all the checkboxes and click "Save my preferences". Finally, click "Yes, I\'m sure"',
     instruction: "Keep patient! Don't share your data",
   },
 ];
