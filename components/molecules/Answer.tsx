@@ -2,7 +2,6 @@ import React from 'react';
 import { content } from '@/content/Content';
 import Button from '../atoms/Button';
 import Image from 'next/image';
-import answer from '@/public/images/answers/level1.png';
 
 /*  Content-box for levels: This component returns the correct answer when the player loose.
     It reads the answer from Content.tsx */

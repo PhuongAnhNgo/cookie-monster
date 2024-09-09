@@ -18,7 +18,7 @@ const Level1 = ({}: Level1Props) => {
         </Heading>
 
         <p className='text-base md:text-xl'>
-          We use cookie to improve user experience. Your data is for us
+          We use cookies to improve user experience. Your data is for us
           precious, please agree to share data with us.
         </p>
       </div>

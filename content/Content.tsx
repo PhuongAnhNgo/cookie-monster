@@ -6,32 +6,33 @@ export const content = [
     definition:
       'It uses <strong>visual elements (colors, size, etc.)</strong> to trick the user into choosing less restrictive privacy settings.',
     answer:
-      "The 'Decline' button to opt-out from cookies has been designed to appear as if it is disabled . Cookie Monster used deceptive button colors, sizes, positions, etc. to make you more focus on the accept option. ",
+      "The 'Decline' button to opt-out from cookies has been designed to appear as if it is disabled. Cookie Monster used deceptive button colors, sizes, positions, etc. to make you more focused on the accept option. ",
   },
   {
     title: 'Deceptive Snugness',
     name: 'DECEPTIVE SNUGNESS',
     instruction: 'Do not agree to anything!',
     definition:
-      'It sets data sharing options to <strong>agree by default</strong>.',
-    answer: 'Uncheck every data-sharing options before click "Save& Continue"',
+      'It sets data-sharing options to <strong>agree by default</strong>.',
+    answer:
+      'Uncheck every data-sharing options before clicking "Save& Continue"',
   },
   {
     title: 'Ambiguous Wording',
     name: 'AMBIGUOUS WORDING',
     definition:
-      'Information is <strong>intentionally provided in a confusing manner</strong> to trick them into agreeing to share data, or otherwise prevent them from understanding the data- consuming purpose.',
+      'Information is <strong>intentionally provided in a confusing manner</strong> to trick them into agreeing to share data, or otherwise prevent them from understanding the data-consuming purpose.',
     answer:
-      'Disagree to unsubcribe = Subcribe; NOT disagree to unsubribe = Unsubcribe. To unsubcribe you should click "NO" button instead.',
+      'Disagree to unsubcribe = Subcribe; NOT disagree to unsubscribe = Unsubscribe. To unsubcribe you should click "NO" button instead.',
     instruction: 'Read the provided information carefully!',
   },
   {
     title: 'Emotion Steering',
     name: 'EMOTION STEERING',
     definition:
-      "Designers use elements to <strong>influence users' emotions.</strong><br/>For example: Negative information makes users guilty or scare of not sharing information",
+      "Designers use elements to <strong>influence users' emotions.</strong><br/>For example: Negative information makes users guilty or scared of not sharing information",
     answer:
-      "Cookie Monster used words and positiv-negativ colors to affect you. Agree to make friend with it means you agree to share data. Don't agree to this! ",
+      "Don't let the sad face of cookie, it's words or the color of buttons affect your decision. Agree to make friend with it means you agree to share data. Don't agree to this! ",
     instruction: "Don't let cookie's words affect you!",
   },
   {
@@ -40,7 +41,7 @@ export const content = [
     definition:
       'Other <strong>distracting elements</strong> are placed alongside information related to data protection.',
     answer:
-      'Between many unrelevant informaton, there is a line that indicated you have to share your data to visit the factory. To protect your data, do not visit the factory.',
+      'Between unrelevant information, there is a line that indicates you have to share your data to visit the factory. To protect your data, do not visit the factory.',
     instruction: 'Read the provided information carefully!',
   },
   {

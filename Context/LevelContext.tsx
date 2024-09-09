@@ -11,7 +11,8 @@ type LevelContext = {
   setCurrLevel: React.Dispatch<React.SetStateAction<number>>;
   lives: number; //The number of failed levels => to calculate result and lives
   setLives: React.Dispatch<React.SetStateAction<number>>;
-  result: resultType; //Replace character in the game
+  result: resultType; //The result of each level.
+  //Used to replace content and character in the game
   setResult: React.Dispatch<React.SetStateAction<resultType>>;
 };
 export const LevelContext = createContext<LevelContext | null>(null);

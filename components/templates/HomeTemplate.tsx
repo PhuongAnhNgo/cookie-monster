@@ -22,7 +22,7 @@ const HomeTemplate = () => {
 
       <Heading className='mx-6 w-4/5 items-center md:pt-6 lg:mt-40 lg:w-8/12' />
       <p className='mx-4 flex items-center text-center text-base text-zinc-100/70 md:text-lg lg:text-xl'>
-        Will you be able to safe your data from Cookie Monster’s evil tricks?
+        Will you be able to save your data from Cookie Monster’s evil tricks?
       </p>
 
       <div className='flex justify-center'>

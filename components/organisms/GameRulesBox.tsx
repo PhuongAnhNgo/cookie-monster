@@ -26,15 +26,15 @@ const GameRulesBox = () => {
       </Heading>
       <RuleSet
         imgSrc='/images/Cookie-ava.svg'
-        rule='Evil Cookie will use every tricks to lure you accept sharing data and signing up for everything.'
+        rule='Evil Cookie will use every trick to lure you to accept sharing data and signing up for everything.'
       />
       <RuleSet
         imgSrc='/images/Human-ava.svg'
-        rule={`Do not accept to anything!\nRead all pop-ups carefully and opt out from cookies and services.`}
+        rule={`Do not accept anything!\nRead all pop-ups carefully and optout of cookies and services.`}
       />
       <RuleSet
         imgSrc='/images/Hearts-ava.svg'
-        rule='You have 3 lives in total. Every wrong answer will cost you a live.'
+        rule='You have 3 lives in total. Every wrong answer will cost you a life.'
       />
       <div className='flex justify-center pt-4'>
         <Button
