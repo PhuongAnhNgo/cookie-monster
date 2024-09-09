@@ -31,7 +31,7 @@ export const content = [
     definition:
       "Designers use elements to <strong>influence users' emotions.</strong><br/>For example: Negative information makes users guilty or scared of not sharing information",
     answer:
-      "Don't let the sad face of cookie, it's words or the color of buttons affect your decision. Agree to make friend with it means you agree to share data. Don't agree to this! ",
+      "Don't let the sad face of Cookie, its words, or the color of buttons affect your decision. Agree to make friends with it means you agree to share data. Don't agree to this! ",
     instruction: "Don't let cookie's words affect you!",
   },
   {
