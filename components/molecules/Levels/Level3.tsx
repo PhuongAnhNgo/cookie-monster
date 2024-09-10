@@ -18,7 +18,8 @@ const Level3 = ({}: Level3Props) => {
         </Heading>
 
         <p className='text-base md:text-xl'>
-          By clicking "no" you are not disagree to unsubcribe to our newsletter
+          By clicking &quot;no&quot; you are not disagree to unsubcribe to our
+          newsletter
         </p>
       </div>
       <div className='flex w-full justify-between pb-4'>
