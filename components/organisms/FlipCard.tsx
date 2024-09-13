@@ -19,7 +19,7 @@ const FlipCard = ({ children, className }: FlipCardProps) => {
   const [showAnswer, setShowAnswer] = useState(false);
   const [firstRender, setFirstRender] = useState(true);
   const [levelHidden, setLevelHidden] = useState(false);
-  const [replay, setReplay] = useState(false);
+
   const router = useRouter();
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const FlipCard = ({ children, className }: FlipCardProps) => {
     } else {
       setFlipped(!flipped);
     }
-    if (replay == true || result == 'neutral') {
+    if (result == 'neutral') {
       setLevelHidden(false);
     } else {
       setLevelHidden(true);
@@ -37,7 +37,6 @@ const FlipCard = ({ children, className }: FlipCardProps) => {
 
   const handelReplay = () => {
     setResult('neutral');
-    setReplay(true);
   };
 
   const nextLevel = () => {

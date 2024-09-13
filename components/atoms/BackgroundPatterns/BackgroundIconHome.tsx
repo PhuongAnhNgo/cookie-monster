@@ -30,7 +30,7 @@ const BackgroundIcon = () => {
         alt='Crying human'
         className='absolute -left-8 bottom-40 w-36 md:w-48 lg:top-48'
       />
-      <p className='md:text-s absolute bottom-1 right-1 text-xs text-zinc-300/40'>
+      <p className='absolute bottom-1 right-1 text-xs text-zinc-300/40 md:text-s'>
         Cookie image created by Canva AI. Folder Image made by Freepik from
         <span>
           <a href='https://www.flaticon.com/'> www.flaticon.com</a>
